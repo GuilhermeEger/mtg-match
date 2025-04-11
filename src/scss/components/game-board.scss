@@ -1,0 +1,28 @@
+.match-board {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    height: 100vh;
+    position: relative;
+
+    .multiple-damage-display {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        background: white;
+        color: black;
+        border-radius: 20px;
+        width: 170px;
+        padding: 12px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .multiple-damage-display-title {
+        padding: 10px 24px;
+    }
+}

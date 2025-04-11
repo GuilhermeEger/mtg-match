@@ -1,0 +1,59 @@
+@use "../variables" as var;
+
+.player-display {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .player-health {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .health-points {
+        font-size: 140px;
+    }
+
+    .action-display {
+        text-align: center;
+        padding: 12px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 50%;
+        margin: auto;
+        background: var.$color-white;
+        color: black;
+        border-radius: 50px;
+    }
+
+    .life-handler-icon {
+        width: 100px;
+        height: 100px;
+        fill: var.$color-white;
+    }
+
+    .life-handler-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .health-increase {
+        color: var.$color-green;
+    }
+
+    .health-decrease {
+        color: var.$color-red;
+    }
+
+}
